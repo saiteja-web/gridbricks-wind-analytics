@@ -1,0 +1,26 @@
+cat > .gitignore <<'EOF'
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node / React
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Generated OS files
+.DS_Store
+__MACOSX/
+
+# Logs
+*.log
+EOF
